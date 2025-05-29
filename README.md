@@ -1,4 +1,4 @@
-# first-mcp · Minimal MCP Server in TypeScript
+# basic-mcp · Minimal MCP Server in TypeScript
 
 > **Status:** Proof of concept — designed for quick local testing with Model Context Protocol clients.
 
@@ -31,7 +31,7 @@ Use it to learn how transports, tools and schemas work with `@modelcontextprotoc
 
 ```bash
 # 1 — Clone
-git clone https://github.com/<your-user>/first-mcp.git
+git clone https://github.com/<your-user>/basic-mcp.git
 cd first-mcp
 
 # 2 — Install
@@ -66,7 +66,7 @@ and you’ll get:
 ## 🗂 Project layout
 
 ```
-first-mcp/
+basic-mcp/
 ├─ src/
 │  └─ index.ts         # Main MCP server
 ├─ package.json
