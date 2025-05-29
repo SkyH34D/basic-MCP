@@ -12,7 +12,7 @@ Use it to learn how transports, tools and schemas work with `@modelcontextprotoc
 
 | Feature | Description |
 |---------|-------------|
-| **Lightweight** | One‑file implementation (`src/index.ts`). |
+| **Lightweight** | One‑file implementation (`main.ts`). |
 | **Stdio transport** | Communicates over standard I/O (perfect for piping into LLMs). |
 | **Zod validation** | Strongly‑typed parameters with runtime validation. |
 | **Mock weather** | Demonstrates `content` blocks without external APIs. |
