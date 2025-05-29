@@ -3,16 +3,15 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { CompatibilityCallToolResultSchema } from "@modelcontextprotocol/sdk/types.js";
 import { z } from 'zod'
 
-// 1. Crear el servidor
-// Es la interfaz principal con el protocolo MCP. Maneja la comunicación entre el cliente y el servidor
-
+// 1. Create the server
+// This is the main interface with the MCP protocol. It handles communication between the client and the server.
 const server = new McpServer ({
     name: 'first-mcp',
     version: '1.0.0'
 })
 
-// 2. Definir las herramientas
-// Las herramientas le permite al LLM realizar acciones a través de tu servidor.
+// 2. Define the tools
+// Tools allow the LLM to perform actions through your server.
 server.tool(
     'fetch-weather', //titulo de la herramienta
     'Tool to fetch the weather of a city', //descripción de la herramienta
@@ -25,14 +24,14 @@ server.tool(
             content: [
                 {
                 type: 'text',
-                text: `El clima de ${city} es soleado`
+                text: `The weather in ${city} is sunny.`
                 }
             ]
         }
     }
 )
 
-// 3. Escuchas las conexiones del cliente
-//El transporte es el medio de comunicación entre el cliente y el servidor. En este caso, se utiliza la entrada/salida estándar
+// 3. Listen for client connections
+// The transport is the communication channel between the client and the server. In this case, standard input/output is used.
 const transport = new StdioServerTransport ()
 await server.connect(transport)
