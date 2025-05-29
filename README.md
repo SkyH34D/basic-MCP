@@ -56,7 +56,7 @@ and you’ll get:
 ```jsonc
 {
   "content": [
-    { "type": "text", "text": "El clima de Madrid es soleado" }
+    { "type": "text", "text": "The weather in Madrid is sunny." }
   ]
 }
 ```
