@@ -6,20 +6,20 @@ import { z } from 'zod'
 // 1. Create the server
 // This is the main interface with the MCP protocol. It handles communication between the client and the server.
 const server = new McpServer ({
-    name: 'first-mcp',
+    name: 'basic-mcp',
     version: '1.0.0'
 })
 
 // 2. Define the tools
 // Tools allow the LLM to perform actions through your server.
 server.tool(
-    'fetch-weather', //titulo de la herramienta
-    'Tool to fetch the weather of a city', //descripción de la herramienta
+    'fetch-weather', //tool title
+    'Tool to fetch the weather of a city', //tool description
     {
-        city: z.string().describe('City name'), // parametros que puede recibir la herramienta
+        city: z.string().describe('City name'), //tool input params
     },
     async ({ city }) => {
-        // lo que queremos que haga
+        //what we want it to do
         return {
             content: [
                 {
