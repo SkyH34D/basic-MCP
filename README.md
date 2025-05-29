@@ -31,14 +31,14 @@ Use it to learn how transports, tools and schemas work with `@modelcontextprotoc
 
 ```bash
 # 1 — Clone
-git clone https://github.com/<your-user>/basic-mcp.git
+git clone https://github.com/SkyH34D/basic-mcp.git
 cd first-mcp
 
 # 2 — Install
 pnpm install           # or: npm install / yarn install
 
-# 3 — Run (dev)
-pnpm dlx ts-node src/index.ts
+# 3 — Run (non-sense, it's LLM's job)
+npx -y tsx main.ts
 # The server now listens on STDIN/STDOUT for MCP messages
 ```
 
@@ -67,10 +67,9 @@ and you’ll get:
 
 ```
 basic-mcp/
-├─ src/
-│  └─ index.ts         # Main MCP server
+├─ main.ts         # Main MCP server
 ├─ package.json
-└─ tsconfig.json
+└─ pnpm-lock.yaml
 ```
 
 ---
