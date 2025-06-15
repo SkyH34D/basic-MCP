@@ -109,6 +109,6 @@ _(Edit `package.json` to fit your tooling.)_
 
 ## 📄 License
 
-MIT
+MIT License. See [LICENSE](LICENSE) for more information.
 
 
