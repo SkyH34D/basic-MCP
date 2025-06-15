@@ -111,8 +111,4 @@ _(Edit `package.json` to fit your tooling.)_
 
 MIT
 
----
 
-### 🤝 Contributing
-
-PRs and discussions are welcome! If you build on this, share your results.
